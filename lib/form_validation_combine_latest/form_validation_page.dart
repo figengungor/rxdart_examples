@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rxdart_examples/form_validation_combine_latest/form_validation_provider.dart';
 
-class FormValidationPage extends StatefulWidget {
-  @override
-  FormValidationPageState createState() {
-    return new FormValidationPageState();
-  }
-}
-
-class FormValidationPageState extends State<FormValidationPage> {
+class FormValidationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FormValidationBloc _bloc = FormValidationProvider.of(context).bloc;
