@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rxdart_examples/form_validation_combine_latest/form_validation_page.dart';
 import 'package:rxdart_examples/form_validation_combine_latest/form_validation_provider.dart';
+import 'package:rxdart_examples/search_debounce_distinct/search_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomePage(),
         '/form_validation_page': (context) =>
             FormValidationProvider(child: FormValidationPage()),
+        '/search_page': (context) => SearchPage(),
       },
     );
   }
@@ -24,6 +26,7 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   final _navItems = [
     NavItem('Form Validation', '/form_validation_page'),
+    NavItem('Search', '/search_page'),
   ];
 
   @override
