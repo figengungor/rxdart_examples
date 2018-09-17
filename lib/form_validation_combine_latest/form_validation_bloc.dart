@@ -19,7 +19,7 @@ class FormValidationBloc{
         _email.sink.addError('Invalid email');
       }
       if(!isPasswordValid && p.isNotEmpty){
-        _password.sink.addError('Invalid password');
+        _password.sink.addError('Invalid password: must be at least 6 characters');
       }
       print(isEmailValid && isPasswordValid);
       return isEmailValid && isPasswordValid;

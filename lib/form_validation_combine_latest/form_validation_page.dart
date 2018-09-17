@@ -51,6 +51,7 @@ class FormValidationPageState extends State<FormValidationPage> {
               decoration: InputDecoration(
                   labelText: 'Password', errorText: snapshot.error),
               onChanged: bloc.changePassword,
+              obscureText: true,
             ),
       );
 
