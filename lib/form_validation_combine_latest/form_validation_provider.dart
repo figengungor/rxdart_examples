@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rxdart_examples/form_validation_bloc.dart';
-export 'package:rxdart_examples/form_validation_bloc.dart';
+import 'package:rxdart_examples/form_validation_combine_latest/form_validation_bloc.dart';
+export 'package:rxdart_examples/form_validation_combine_latest/form_validation_bloc.dart';
 
 class FormValidationProvider extends StatefulWidget {
   final Widget child;

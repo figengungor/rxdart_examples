@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rxdart_examples/form_validation_provider.dart';
+import 'package:rxdart_examples/form_validation_combine_latest/form_validation_provider.dart';
 
 class FormValidationPage extends StatefulWidget {
   @override
@@ -58,7 +58,7 @@ class FormValidationPageState extends State<FormValidationPage> {
         stream: bloc.isSubmitValid,
         builder: (context, snapshot) => RaisedButton(
               child: Text('Submit'),
-              onPressed: snapshot.hasData ? bloc.submit : null,
+              onPressed: snapshot.hasData && snapshot.data ? bloc.submit : null,
             ),
       );
 }
